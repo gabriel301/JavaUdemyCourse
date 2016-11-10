@@ -28,7 +28,7 @@ public class Main {
 
         position = calculateHighScorePosition(400);
         displayHighScorePosition("Mike",position);
-        
+
         position = calculateHighScorePosition(50);
         displayHighScorePosition("Mike",position);
     }
