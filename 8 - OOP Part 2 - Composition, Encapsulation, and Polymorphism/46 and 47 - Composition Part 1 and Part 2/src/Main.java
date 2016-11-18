@@ -15,5 +15,16 @@ public class Main {
 
         //Encapsulation of the member classes' methods
         thePC.power();
+
+        //Challenge
+        Wall [] walls = new Wall[4];
+        String[] directions = {"North", "South", "East", "West"};
+        for(int i=0;i<4;i++){
+            walls[i] = new Wall(directions[i]);
+        }
+
+        Bedroom bedroom =  new Bedroom("My Bedroom",walls,new Ceiling(12,55), new Bed("Modern",4,3,2,1),new Lamp("Classic",false,75));
+        bedroom.makeBed();
+        bedroom.getLamp().turnOn();
     }
 }
